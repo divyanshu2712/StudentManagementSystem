@@ -40,11 +40,11 @@ window.title('Student Management System')
 # specifying the window size
 window.geometry('1280x700+50+70') 
 # Setting Icon
-window.iconbitmap(r"D:\Database Management System Project\images\database-storage.ico")
+window.iconbitmap(r"images\database-storage.ico")
 # specifying that window size cannot be changed 
 window.resizable(False,False)
 # Adding Background Image
-bg_org=Image.open(r"D:\Database Management System Project\images\bg.jpg")
+bg_org=Image.open(r"images\bg.jpg")
 bg_org.resize((1600,900))
 bg=ImageTk.PhotoImage(bg_org)
 bglabel=Label(window,image=bg)
@@ -56,19 +56,19 @@ bglabel.place(x=0,y=0)
 loginframe=Frame(window,padx=15,pady=15)
 loginframe.place(x=380,y=185)
 # Opening the Studnet login image Converting it to image for tkinter
-login=Image.open(r"D:\Database Management System Project\images\student_login.png")
+login=Image.open(r"images\student_login.png")
 login_ico=ImageTk.PhotoImage(login)
 # making the label 
 login_label_img=Label(loginframe,image=login_ico)
 login_label_img.grid(row=0,column=0,columnspan=2)
 # adding username text
-user=ImageTk.PhotoImage(file=r"D:\Database Management System Project\images\user.png")
+user=ImageTk.PhotoImage(file=r"images\user.png")
 usernamelabel=Label(loginframe,image=user,text="Username",font=('times new roman',20,'bold'),compound=LEFT) # compound shift image to left 
 usernamelabel.grid(row=1,column=0,padx=10,pady=20)
 username_entry=Entry(loginframe,font=('times new roman',20,'bold'),bd=5,foreground='royalblue',justify=CENTER)
 username_entry.grid(row=1,column=1,padx=10,pady=20)
 # making password text
-password=ImageTk.PhotoImage(file=r"D:\Database Management System Project\images\password.png")
+password=ImageTk.PhotoImage(file=r"images\password.png")
 pslabel=Label(loginframe,image=password,text="Password",font=('times new roman',20,'bold'),compound=LEFT) # compound shift image to left 
 pslabel.grid(row=2,column=0,padx=10,pady=5)
 ps_entry=Entry(loginframe,font=('times new roman',20,'bold'),bd=5,foreground='royalblue',justify=CENTER)

@@ -56,7 +56,7 @@ def update_stu():
         update_window=Toplevel()
         update_window.resizable(False,False)
         update_window.title('Update Student Data')
-        update_window.iconbitmap(r'D:\Database Management System Project\images\database-storage.ico')
+        update_window.iconbitmap(r'images\database-storage.ico')
 
 
         idLabel=Label(update_window,text='Enrollment No. :',font=('times new roman',15,'bold'))
@@ -175,7 +175,7 @@ def search_stu():
     search_window=Toplevel()
     search_window.resizable(False,False)
     search_window.title("Search Student's")
-    search_window.iconbitmap(r'D:\Database Management System Project\images\database-storage.ico')
+    search_window.iconbitmap(r'images\database-storage.ico')
 
     idLabel=Label(search_window,text='Enrollment No. :',font=('times new roman',15,'bold'))
     idLabel.grid(row=0,column=0,padx=10,pady=10)
@@ -242,7 +242,7 @@ def add_stu():
     add_window=Toplevel()
     add_window.resizable(False,False)
     add_window.title('Add Student Data')
-    add_window.iconbitmap(r'D:\Database Management System Project\images\database-storage.ico')
+    add_window.iconbitmap(r'images\database-storage.ico')
 
     idLabel=Label(add_window,text='Enrollment No. :',font=('times new roman',15,'bold'))
     idLabel.grid(row=0,column=0,padx=10,pady=10)
@@ -366,7 +366,7 @@ def on_leave_show(e):
 root = ttkthemes.ThemedTk()
 root.set_theme('breeze')
 # Setting Icon
-root.iconbitmap(r"D:\Database Management System Project\images\database-storage.ico")
+root.iconbitmap(r"images\database-storage.ico")
 # Setting Title
 root.title("Student Management System")
 # Set Geometry
@@ -374,7 +374,7 @@ root.geometry('1280x700+50+70')
 # Set Resizable
 root.resizable(False, False)
 # background image load and show
-bg1 = Image.open(r"D:\Database Management System Project\images\bg.jpg")
+bg1 = Image.open(r"images\bg.jpg")
 bg_manage = ImageTk.PhotoImage(bg1)
 bg = Label(root, image=bg_manage)
 bg.place(x=0, y=0)
@@ -394,7 +394,7 @@ slider()
 left = Frame(root, width=300, height=550, pady=10)
 left.place(x=20, y=100)
 logo_img = ImageTk.PhotoImage(
-    file=r"D:\Database Management System Project\images\profile.png")
+    file=r"images\profile.png")
 logo = Label(left, image=logo_img)
 logo.grid(row=0, column=0, pady=20)
 
